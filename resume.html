@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirdula M — Resume</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c9cff'/%3E%3Ctext x='32' y='44' font-family='Arial' font-weight='700' font-size='34' text-anchor='middle' fill='%230b0d12'%3EM%3C/text%3E%3C/svg%3E">
+<style>
+@page{size:A4;margin:12mm 14mm}
+body{font-family:"Times New Roman",Times,serif;color:#000;background:#eef0f4;margin:0;font-size:13.5px;line-height:1.4}
+.bar{position:sticky;top:0;background:#0b0d12;color:#fff;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;font-family:system-ui,sans-serif;font-size:14px}
+.bar a{color:#9fb4ff;text-decoration:none}
+.bar button{background:#7c9cff;color:#0b0d12;border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer}
+.page{background:#fff;max-width:800px;margin:20px auto;padding:34px 42px;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+h1{text-align:center;font-size:28px;margin:0}
+.c{text-align:center;margin:2px 0 6px}
+a{color:#1a4db3}
+h2{font-size:16px;border-bottom:1px solid #000;margin:12px 0 5px;padding-bottom:1px}
+.r{display:flex;justify-content:space-between;gap:10px}
+ul{margin:2px 0 6px;padding-left:20px}li{margin:1px 0;text-align:justify}
+p{margin:2px 0;text-align:justify}
+@media print{body{background:#fff;font-size:12px}.bar{display:none}.page{box-shadow:none;margin:0;padding:0;max-width:none}}
+@media(max-width:600px){.page{padding:20px 16px;margin:0}.r{flex-direction:column;gap:0}}
+</style>
+</head>
+<body>
+<div class="bar"><a href="./">← Portfolio</a><button onclick="window.print()">Download PDF</button></div>
+<div class="page">
+<h1>MIRDULA M</h1>
+<div class="c">Coimbatore, Tamil Nadu, India | <a href="mailto:mirdulamurugesan@gmail.com">mirdulamurugesan@gmail.com</a> | <a href="https://www.linkedin.com/in/mirdula-m-9235b12a1/">LinkedIn</a> | <a href="https://github.com/Mirdumurugesan">GitHub</a> | <a href="https://mirdumurugesan.github.io/">Portfolio</a></div>
+
+<h2>SUMMARY</h2>
+<p>Computer Science student who builds and ships LLM agents end to end: conversational agents that use tools and keep context across turns, semantic search and hybrid retrieval (BM25 + embeddings with rank fusion), LLM-based candidate–job matching, and evaluation of LLM output on benchmarks. Focused on keeping AI reliable in production: structured outputs, grounded answers with citations, human escalation when the model is unsure, bounded agent loops and model failover. Built a live Telegram agent that runs a grocery store and a Tamil-first voice helpline for government schemes. Strong in Python, FastAPI, SQL, database design and backend engineering.</p>
+
+<h2>EDUCATION</h2>
+<div class="r"><b>Master of Technology (Integrated 5-year), Computer Science and Engineering</b><b>2022 – 2027</b></div>
+<p>&nbsp;&nbsp;<i>Sri Ramakrishna Engineering College, Coimbatore</i> | CGPA: 8.5/10</p>
+<div class="r"><b>Higher Secondary Certificate (HSC)</b><b>2021 – 2022</b></div>
+<p>&nbsp;&nbsp;<i>National Model Higher Secondary School, Coimbatore</i> | 88.1%</p>
+
+<h2>EXPERIENCE</h2>
+<div class="r"><span><b>Web Development Intern</b> – Xcodefix Pvt. Ltd.</span><b>June 2025 – Dec 2025</b></div>
+<ul>
+<li>Developed a CRM application with React.js and PostgreSQL, building both the responsive UI and the relational data layer (tables and queries).</li>
+<li>Built and integrated RESTful APIs connecting front-end and back-end, defining request/response contracts between client and server.</li>
+</ul>
+
+<h2>PROJECTS</h2>
+<div class="r"><span><b>Kirana Ops Agent – Conversational AI Agent Running a Grocery Store via Telegram</b> (Pydantic AI)</span><span><a href="https://t.me/mirdu_kirana_bot">Live Bot</a> | <a href="https://github.com/Mirdumurugesan/supermarket-ops-agent">GitHub</a></span></div>
+<ul>
+<li>Live AI agent that lets a shop owner run an Indian grocery store entirely through Telegram chat: stock intake, multi-turn billing that keeps context across messages, khata (credit) ledgers, day close and analysis.</li>
+<li>29 tools in six groups with typed, structured outputs (Pydantic AI); generates GST invoices (HSN codes, CGST/SGST split, Decimal arithmetic) as PDFs and analysis decks with charts as PPTX.</li>
+<li>Restock recommendations based on sales velocity (days of stock cover); multilingual replies; model failover across Groq and Gemini; 118 tests, Dockerised.</li>
+</ul>
+<div class="r"><span><b>HRVerse – Enterprise HR Management System with LLM Candidate Matching</b> (MERN)</span><span><a href="https://hr-verse-ai.vercel.app/">Live</a> | <a href="https://github.com/Mirdumurugesan/HRVerse-AI">GitHub</a></span></div>
+<ul>
+<li>LLM resume screening and interview analysis (Groq LLaMA 3) to match candidates to roles, with a Groq → OpenRouter failover chain so features degrade gracefully.</li>
+<li>Full-stack HRMS with JWT authentication and role-based access control across 4 roles and 17 REST API modules; deployed on Vercel and Render.</li>
+<li>Designed a 126,000-record MongoDB database with 15 compound indexes and server-side pagination to keep query latency low.</li>
+</ul>
+<div class="r"><span><b>NEXUS – Automated GitHub Issue-Resolution System</b> (Python, LangGraph, Weaviate)</span><a href="https://github.com/Mirdumurugesan/nexus">GitHub</a></div>
+<ul>
+<li>Multi-agent system that takes a GitHub issue in an unfamiliar codebase and produces a working unified-diff patch end to end; evaluated on the SWE-bench benchmark.</li>
+<li>Semantic search over large codebases: tree-sitter AST chunking, BM25 + dense embeddings (Weaviate) fused via Reciprocal Rank Fusion, with HyDE query expansion.</li>
+<li>Four-stage tool-using workflow (plan → implement → review → reflect) with a bounded self-correction loop (max 2 retries) for guaranteed termination and predictable cost; GPT-4o with automatic Groq LLaMA failover; run state in PostgreSQL.</li>
+</ul>
+<div class="r"><span><b>Kural – Tamil-First Voice Helpline for Government Schemes</b> (FastAPI, Gnani AI)</span><a href="https://github.com/Mirdumurugesan/kural">GitHub</a></div>
+<ul>
+<li>Voice helpline where citizens ask about government schemes in Tamil, Tanglish or English, by phone or web; RAG answers are grounded in verified scheme documents and spoken back in Tamil with the official source cited.</li>
+<li>Hybrid retrieval and ranking (BM25 + character n-gram TF-IDF, fused with RRF), evaluated on a Tamil, Tanglish, code-mixed and English benchmark: 20/20 top-1 accuracy.</li>
+<li>Built the full voice pipeline on Gnani AI (Prisma STT, Evon v3.3 LLM, Timbre TTS) with Twilio telephony and noise cleanup for phone audio.</li>
+<li>Safety by design: escalates to a human callback ticket when not confident, redacts Aadhaar/PAN/phone/account data, rate limiting, and a hard budget stop; 34 tests.</li>
+</ul>
+
+<h2>TECHNICAL SKILLS</h2>
+<p><b>AI / LLMs:</b> LLM agents and tool use, structured outputs, prompting, RAG, embeddings and semantic search, hybrid retrieval and ranking (BM25, RRF), LLM evaluation, LangGraph/LangChain, Pydantic AI, Weaviate, PyTorch, LLM APIs (OpenAI, Groq, Gemini, Gnani AI)</p>
+<p><b>Programming:</b> Python, Java, JavaScript, C</p>
+<p><b>Backend &amp; APIs:</b> FastAPI, Node.js, Express.js, REST APIs, JWT/RBAC, Twilio, Telegram Bot API</p>
+<p><b>Databases:</b> SQL, PostgreSQL, MongoDB, SQLite, schema design &amp; indexing</p>
+<p><b>Tools:</b> Git, Docker, CI/CD, cloud deploys (Vercel, Render), pytest, Pandas, NumPy, React.js</p>
+
+<h2>CERTIFICATIONS</h2>
+<p>NPTEL – Software Testing • NPTEL – Cybersecurity and Privacy • NPTEL – Privacy and Security in Online Social Media • AWS Cloud Practitioner Essentials</p>
+</div>
+</body>
+</html>
