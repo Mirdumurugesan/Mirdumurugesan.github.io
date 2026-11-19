@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirdula M — AI & Backend Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d12;--card:#12151d;--line:#222736;--txt:#e7e9ee;--mut:#9aa1b2;--acc:#7c9cff;--acc2:#5eead4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav b{font-weight:700;letter-spacing:.3px}
+nav .links{display:flex;gap:18px;font-size:14px}nav .links a{color:var(--mut)}
+@media(max-width:600px){nav .links{display:none}}
+header{padding:80px 0 56px}
+.tag{font-family:'JetBrains Mono',monospace;color:var(--acc2);font-size:13px;margin-bottom:14px}
+h1{font-size:clamp(38px,7vw,60px);line-height:1.05;letter-spacing:-1.5px}
+.lead{color:var(--mut);font-size:18px;max-width:640px;margin:18px 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{border:1px solid var(--line);padding:9px 16px;border-radius:9px;font-size:14px;font-weight:500;color:var(--txt);background:var(--card)}
+.btn.p{background:var(--acc);color:#0b0d12;border-color:var(--acc)}
+.btn:hover{text-decoration:none;border-color:var(--acc)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:42px}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stat b{font-size:24px;display:block}.stat span{color:var(--mut);font-size:13px}
+section{padding:46px 0;border-top:1px solid var(--line)}
+h2{font-size:13px;font-family:'JetBrains Mono',monospace;color:var(--acc2);font-weight:500;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:22px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:16px}
+.proj h3{font-size:19px;margin-bottom:2px}
+.proj .sub{color:var(--mut);font-size:14px;margin-bottom:12px}
+.proj ul{padding-left:18px;color:#cfd3dc;font-size:15px}.proj li{margin:5px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 4px}
+.chip{font-family:'JetBrains Mono',monospace;font-size:12px;padding:3px 9px;border-radius:999px;background:#1a1f2b;color:#b9c3e6;border:1px solid var(--line)}
+.plinks{display:flex;gap:14px;margin-top:12px;font-size:14px;font-weight:500}
+.badge{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;background:rgba(94,234,212,.12);color:var(--acc2);margin-left:8px;vertical-align:middle}
+.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.item{margin-bottom:18px}.item h3{font-size:17px}.item .mut{color:var(--mut);font-size:14px}
+.skills{display:grid;gap:14px}
+.skills div b{display:block;font-size:14px;margin-bottom:6px}
+footer{padding:46px 0 70px;border-top:1px solid var(--line);color:var(--mut);font-size:14px}
+footer h2{margin-bottom:12px}
+.contact{font-size:22px;font-weight:600;color:var(--txt);margin-bottom:14px;word-break:break-all}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Mirdula M</b><div class="links"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
+
+<div class="wrap">
+<header>
+  <div class="tag">// AI &amp; backend engineer · Coimbatore, India</div>
+  <h1>I build LLM agents<br>that actually ship.</h1>
+  <p class="lead">Conversational agents that use tools and keep context, semantic search and hybrid retrieval, LLM-based candidate–job matching, and evaluation on benchmarks. Focused on making AI reliable in production: structured outputs, grounded answers, human escalation, bounded agent loops and model failover.</p>
+  <div class="btns">
+    <a class="btn p" href="https://github.com/Mirdumurugesan">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/mirdula-m-9235b12a1/">LinkedIn</a>
+    <a class="btn" href="mailto:mirdulamurugesan@gmail.com">mirdulamurugesan@gmail.com</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>8.5</b><span>CGPA / 10</span></div>
+    <div class="stat"><b>4</b><span>AI &amp; full-stack projects</span></div>
+    <div class="stat"><b>2</b><span>Live deployments</span></div>
+    <div class="stat"><b>150+</b><span>Automated tests</span></div>
+  </div>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="proj">
+    <h3>Kirana Ops Agent <span class="badge">LIVE</span></h3>
+    <div class="sub">Conversational AI agent that runs a grocery store via Telegram</div>
+    <ul>
+      <li>A shop owner runs an Indian grocery store entirely through Telegram chat: stock intake, multi-turn billing that keeps context across messages, khata (credit) ledgers, day close and analysis.</li>
+      <li>29 tools in six groups with typed, structured outputs; generates GST invoices (HSN codes, CGST/SGST split, Decimal arithmetic) as PDFs and analysis decks with charts as PPTX.</li>
+      <li>Restock recommendations from sales velocity; multilingual replies; Groq ↔ Gemini model failover; 118 tests, Dockerised.</li>
+    </ul>
+    <div class="chips"><span class="chip">Pydantic AI</span><span class="chip">Python</span><span class="chip">Telegram Bot API</span><span class="chip">Groq</span><span class="chip">Gemini</span><span class="chip">Docker</span></div>
+    <div class="plinks"><a href="https://t.me/mirdu_kirana_bot">Live Bot ↗</a><a href="https://github.com/Mirdumurugesan/supermarket-ops-agent">GitHub ↗</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>HRVerse <span class="badge">LIVE</span></h3>
+    <div class="sub">Enterprise HR management system with LLM candidate matching</div>
+    <ul>
+      <li>LLM resume screening and interview analysis (Groq LLaMA 3) to match candidates to roles, with a Groq → OpenRouter failover chain so features degrade gracefully.</li>
+      <li>JWT authentication and role-based access control across 4 roles and 17 REST API modules; deployed on Vercel and Render.</li>
+      <li>Designed a 126,000-record MongoDB database with 15 compound indexes and server-side pagination for low query latency.</li>
+    </ul>
+    <div class="chips"><span class="chip">MongoDB</span><span class="chip">Express</span><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">LLaMA 3</span><span class="chip">JWT/RBAC</span></div>
+    <div class="plinks"><a href="https://hr-verse-ai.vercel.app/">Live ↗</a><a href="https://github.com/Mirdumurugesan/HRVerse-AI">GitHub ↗</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>NEXUS</h3>
+    <div class="sub">Automated GitHub issue-resolution system · evaluated on SWE-bench</div>
+    <ul>
+      <li>Multi-agent system that takes a GitHub issue in an unfamiliar codebase and produces a working unified-diff patch end to end.</li>
+      <li>Semantic code search: tree-sitter AST chunking, BM25 + dense embeddings (Weaviate) fused via Reciprocal Rank Fusion, with HyDE query expansion.</li>
+      <li>Plan → implement → review → reflect workflow with a bounded self-correction loop (max 2 retries); GPT-4o with automatic Groq LLaMA failover; run state in PostgreSQL.</li>
+    </ul>
+    <div class="chips"><span class="chip">LangGraph</span><span class="chip">Weaviate</span><span class="chip">RRF</span><span class="chip">GPT-4o</span><span class="chip">PostgreSQL</span></div>
+    <div class="plinks"><a href="https://github.com/Mirdumurugesan/nexus">GitHub ↗</a></div>
+  </div>
+
+  <div class="proj">
+    <h3>Kural</h3>
+    <div class="sub">Tamil-first voice helpline for government schemes</div>
+    <ul>
+      <li>Citizens ask about government schemes in Tamil, Tanglish or English, by phone or web; RAG answers grounded in verified scheme documents, spoken back in Tamil with the official source cited.</li>
+      <li>Hybrid retrieval and ranking (BM25 + character n-gram TF-IDF, fused with RRF): 20/20 top-1 accuracy on a Tamil, Tanglish, code-mixed and English benchmark.</li>
+      <li>Full voice pipeline on Gnani AI (Prisma STT, Evon v3.3 LLM, Timbre TTS) with Twilio telephony.</li>
+      <li>Safety by design: human callback escalation when unsure, Aadhaar/PAN/phone redaction, rate limiting, hard budget stop; 34 tests.</li>
+    </ul>
+    <div class="chips"><span class="chip">FastAPI</span><span class="chip">Gnani AI</span><span class="chip">Twilio</span><span class="chip">RAG</span><span class="chip">BM25</span></div>
+    <div class="plinks"><a href="https://github.com/Mirdumurugesan/kural">GitHub ↗</a></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="item">
+    <div class="row"><h3>Web Development Intern · Xcodefix Pvt. Ltd.</h3><span class="mut">Jun 2025 – Dec 2025</span></div>
+    <ul style="padding-left:18px;color:#cfd3dc;font-size:15px;margin-top:6px">
+      <li>Developed a CRM application with React.js and PostgreSQL: responsive UI and the relational data layer (tables and queries).</li>
+      <li>Built and integrated RESTful APIs, defining request/response contracts between client and server.</li>
+    </ul>
+  </div>
+  <h2 style="margin-top:34px">Education</h2>
+  <div class="item">
+    <div class="row"><h3>M.Tech (Integrated 5-year), Computer Science &amp; Engineering</h3><span class="mut">2022 – 2027</span></div>
+    <div class="mut">Sri Ramakrishna Engineering College, Coimbatore · CGPA 8.5/10</div>
+  </div>
+  <div class="item">
+    <div class="row"><h3>Higher Secondary Certificate</h3><span class="mut">2021 – 2022</span></div>
+    <div class="mut">National Model Higher Secondary School, Coimbatore · 88.1%</div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><b>AI / LLMs</b><div class="chips"><span class="chip">LLM agents &amp; tool use</span><span class="chip">Structured outputs</span><span class="chip">Prompting</span><span class="chip">RAG</span><span class="chip">Embeddings</span><span class="chip">Semantic search</span><span class="chip">Hybrid retrieval &amp; ranking</span><span class="chip">LLM evaluation</span><span class="chip">LangGraph / LangChain</span><span class="chip">Pydantic AI</span><span class="chip">Weaviate</span><span class="chip">PyTorch</span></div></div>
+    <div><b>Languages</b><div class="chips"><span class="chip">Python</span><span class="chip">Java</span><span class="chip">JavaScript</span><span class="chip">C</span></div></div>
+    <div><b>Backend &amp; APIs</b><div class="chips"><span class="chip">FastAPI</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">REST</span><span class="chip">JWT / RBAC</span><span class="chip">Twilio</span><span class="chip">Telegram Bot API</span></div></div>
+    <div><b>Databases</b><div class="chips"><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">SQLite</span><span class="chip">Schema design &amp; indexing</span></div></div>
+    <div><b>Tools</b><div class="chips"><span class="chip">Git</span><span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Vercel</span><span class="chip">Render</span><span class="chip">pytest</span><span class="chip">Pandas</span><span class="chip">React.js</span></div></div>
+  </div>
+  <h2 style="margin-top:34px">Certifications</h2>
+  <div class="chips"><span class="chip">NPTEL · Software Testing</span><span class="chip">NPTEL · Cybersecurity and Privacy</span><span class="chip">NPTEL · Privacy &amp; Security in Online Social Media</span><span class="chip">AWS Cloud Practitioner Essentials</span></div>
+</section>
+</div>
+
+<footer id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <div class="contact">mirdulamurugesan@gmail.com</div>
+  <div class="btns">
+    <a class="btn p" href="mailto:mirdulamurugesan@gmail.com">Email me</a>
+    <a class="btn" href="https://github.com/Mirdumurugesan">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/mirdula-m-9235b12a1/">LinkedIn</a>
+  </div>
+  <p style="margin-top:30px">© 2026 Mirdula M</p>
+</div></footer>
+</body>
+</html>
